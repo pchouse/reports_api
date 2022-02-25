@@ -1,0 +1,91 @@
+{
+  "parameters": [
+    {
+      "type": "P_BIGDECIMAL",
+      "name": "BIGDECIMAL",
+      "value": 9.99
+    },
+    {
+      "type": "P_BOOLEAN",
+      "name": "BOOLEAN_TRUE",
+      "value": true
+    },
+    {
+      "type": "P_BOOLEAN",
+      "name": "BOOLEAN_FALSE",
+      "value": false
+    },
+    {
+      "type": "P_BOOL",
+      "name": "BOOL_TRUE",
+      "value": true
+    },
+    {
+      "type": "P_BOOL",
+      "name": "BOOL_FALSE",
+      "value": false
+    },
+    {
+      "type": "P_DATE",
+      "name": "DATE",
+      "value": "1969-10-05",
+      "format": "yyyy-MM-dd"
+    },
+    {
+      "type": "P_DATE",
+      "name": "DATE_TIME",
+      "value": "1969-10-05 09:19:29",
+      "format": "yyyy-MM-dd HH:mm:ss"
+    },
+    {
+      "type": "P_DOUBLE",
+      "name": "DOUBLE",
+      "value": 999.49
+    },
+    {
+      "type": "P_FLOAT",
+      "name": "FLOAT",
+      "value": 99.29
+    },
+    {
+      "type": "P_LONG",
+      "name": "LONG",
+      "value": 9999
+    },
+    {
+      "type": "P_INTEGER",
+      "name": "INTEGER",
+      "value": 1999
+    },
+    {
+      "type": "P_SHORT",
+      "name": "SHORT",
+      "value": 9
+    },
+    {
+      "type": "P_SQL_DATE",
+      "name": "SQLDATE",
+      "value": "1969-10-05"
+    },
+    {
+      "type": "P_TIME",
+      "name": "TIME",
+      "value": "09:29:49"
+    },
+    {
+      "type": "P_SQL_TIME",
+      "name": "SQLTIME",
+      "value": "09:29:49"
+    },
+    {
+      "type": "P_TIMESTAMP",
+      "name": "TIMESTAMP",
+      "value": "1969-10-05 19:19:29"
+    },
+    {
+      "type": "P_STRING",
+      "name": "STRING",
+      "value": "The string"
+    }
+  ]
+}

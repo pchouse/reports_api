@@ -1,0 +1,8 @@
+{
+  "xmlHttps": {
+    "datePattern": "yyyy-MM-dd",
+    "numberPattern": "#.##",
+    "url": "https://api",
+    "type": "GET"
+  }
+}

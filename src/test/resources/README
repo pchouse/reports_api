@@ -1,0 +1,9 @@
+Based on example of http://cysorz-software-hardware.blogspot.com/2008/11/how-to-sign-pdf-using-itext-and.html
+
+To generate a key to self sign:
+
+keytool -genkey -keyalg RSA -alias myname -keypass password -keystore keystore.ks -dname "cn=rreports, c=PT"
+
+To generate the certificate that can be validated at the receiving end do:
+
+keytool -export -alias myname -file export.cer -keystore keystore.ks

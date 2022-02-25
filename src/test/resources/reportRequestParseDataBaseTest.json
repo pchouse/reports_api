@@ -1,0 +1,8 @@
+{
+  "database": {
+    "connectionString": "The connection string",
+    "driver": "The driver",
+    "user": "The user",
+    "password": "The password"
+  }
+}

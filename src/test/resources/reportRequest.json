@@ -1,0 +1,105 @@
+{
+  "report": "VGhlIGNvbXBpbGVkIGphc3BlciByZXBvcnQgZmlsZQ==",
+  "reportType": "PDF",
+  "parameters": [
+    {
+      "type": "P_BIGDECIMAL",
+      "name": "P_BIG_DECIMAL",
+      "value": 9.99
+    },
+    {
+      "type": "P_BOOLEAN",
+      "name": "P_BOOLEAN",
+      "value": true
+    },
+    {
+      "type": "P_DATE",
+      "name": "P_DATE",
+      "value": "1969-10-05",
+      "format": "yyyy-MM-dd"
+    },
+    {
+      "type": "P_DOUBLE",
+      "name": "P_DOUBLE",
+      "value": 999.49
+    },
+    {
+      "type": "P_FLOAT",
+      "name": "P_FLOAT",
+      "value": 99.29
+    },
+    {
+      "type": "P_LONG",
+      "name": "P_LONG",
+      "value": 9999
+    },
+    {
+      "type": "P_INTEGER",
+      "name": "P_INTEGER",
+      "value": 1999
+    },
+    {
+      "type": "P_SHORT",
+      "name": "P_SHORT",
+      "value": 9
+    },
+    {
+      "type": "P_SQL_DATE",
+      "name": "P_SQL_DATE",
+      "value": "1969-10-05"
+    },
+    {
+      "type": "P_TIME",
+      "name": "P_TIME",
+      "value": "09:29:49"
+    },
+    {
+      "type": "P_SQL_TIME",
+      "name": "P_SQL_TIME",
+      "value": "09:29:49"
+    },
+    {
+      "type": "P_TIMESTAMP",
+      "name": "P_TIMESTAMP",
+      "value": "1969-10-05 19:19:29"
+    },
+    {
+      "type": "P_STRING",
+      "name": "P_STRING",
+      "value": "The string"
+    }
+  ],
+  "database": {
+    "connectionString": "The connection string",
+    "driver": "The driver",
+    "user": "the user",
+    "password": "The password"
+  },
+  "pdfSign": true,
+  "sign": {
+    "keyStorePassword": "password",
+    "certificateName": "rreports",
+    "certificatePassword": "password",
+    "level": "CERTIFIED_NO_CHANGES_ALLOWED",
+    "certificateType": "SELF",
+    "signRectangle": {
+      "x": 99,
+      "y": 9,
+      "width": 299,
+      "height": 399,
+      "rotation": 90
+    },
+    "visible": true,
+    "location": "Lisbon",
+    "reason": "Reports API test",
+    "contact": "The contact"
+  },
+  "copies": 9,
+  "encoding": "utf-8",
+  "pdfProperties": {
+    "userPassword": "user password",
+    "ownerPassword": "owner password",
+    "javaScript": "javascript",
+    "permissions": 999
+  }
+}

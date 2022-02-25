@@ -1,0 +1,12 @@
+{
+  "reportResources": [
+    {
+      "name": "report_1.jasper",
+      "resource": "VGhlIGVuY29kZWQgamFzcGVyIHJlcG9ydCAx"
+    },
+    {
+      "name": "report_2.jasper",
+      "resource": "VGhlIGVuY29kZWQgamFzcGVyIHJlcG9ydCAy"
+    }
+  ]
+}

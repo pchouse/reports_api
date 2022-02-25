@@ -1,0 +1,8 @@
+{
+  "jsonHttp": {
+    "datePattern": "yyyy-MM-dd",
+    "numberPattern": "#.##",
+    "url": "http://api",
+    "type": "GET"
+  }
+}
