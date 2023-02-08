@@ -21,7 +21,6 @@ package pt.pchouse.reports.api.generator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import net.sf.jasperreports.export.SimpleDocxExporterConfiguration;
 import net.sf.jasperreports.export.SimplePdfExporterConfiguration;
-import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
@@ -197,7 +196,7 @@ public class GeneratorTest extends Generic<Generator> {
 
         Generator generator = appContext.getBean(Generator.class, new ReportRequest());
 
-        String systemTmpDir = StringUtils.chop(System.getProperty("java.io.tmpdir"));
+        String systemTmpDir = System.getProperty("java.io.tmpdir");
 
         Field configTmpDirField = generator.getClass().getDeclaredField("configTmpDir");
         configTmpDirField.setAccessible(true);
@@ -217,7 +216,11 @@ public class GeneratorTest extends Generic<Generator> {
         Path tmpDir = (Path) tmpDirField.get(generator);
 
         assertThat(Files.exists(tmpDir)).isTrue();
-        assertThat(tmpDir.toFile().getParent()).isEqualTo(systemTmpDir);
+
+        assertThat(
+                tmpDir.toFile().getParent()
+        ).isEqualTo(systemTmpDir);
+
         assertThat(tmpDir.getFileName().toString().startsWith("reports")).isTrue();
 
         deleteTmpDirMethod.invoke(generator);
@@ -231,7 +234,7 @@ public class GeneratorTest extends Generic<Generator> {
 
         Generator generator = appContext.getBean(Generator.class, new ReportRequest());
 
-        String systemTmpDir = StringUtils.chop(System.getProperty("java.io.tmpdir"));
+        String systemTmpDir = System.getProperty("java.io.tmpdir");
 
         Field configTmpDirField = generator.getClass().getDeclaredField("configTmpDir");
         configTmpDirField.setAccessible(true);
@@ -265,7 +268,9 @@ public class GeneratorTest extends Generic<Generator> {
 
         Generator generator = appContext.getBean(Generator.class, new ReportRequest());
 
-        String testTmpDir = System.getProperty("java.io.tmpdir") + "ReportsUnitTests";
+        String testTmpDir = System.getProperty("java.io.tmpdir")
+                + File.separator
+                + "ReportsUnitTests";
         Files.createDirectory(Paths.get(testTmpDir));
         try {
             Field configTmpDirField = generator.getClass().getDeclaredField("configTmpDir");
@@ -304,10 +309,14 @@ public class GeneratorTest extends Generic<Generator> {
 
         Generator generator = appContext.getBean(Generator.class, new ReportRequest());
 
-        String testTmpDir = System.getProperty("java.io.tmpdir") + "ReportsUnitTests";
+        String testTmpDir = System.getProperty("java.io.tmpdir")
+                + File.separator
+                + "ReportsUnitTests";
+
         if (!Files.exists(Paths.get(testTmpDir))) {
             Files.createDirectory(Paths.get(testTmpDir));
         }
+
         try {
             Field configTmpDirField = generator.getClass().getDeclaredField("configTmpDir");
             configTmpDirField.setAccessible(true);
