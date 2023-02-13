@@ -94,7 +94,8 @@ public class ReportController {
                         logger.debug("Going to generate the report");
                         IGenerator generator = appContext.getBean(IGenerator.class, reportRequest);
 
-                        reportResponse.setReport(generator.generate());
+                        String generatorReport = generator.generate();
+                        reportResponse.setReport(generatorReport);
                         reportResponse.setStatus(ReportResponse.Status.OK);
                         reportResponse.setDuration(startInstant, System.nanoTime());
                         logger.debug("Report generated elapsed time:" + reportResponse.getDuration());

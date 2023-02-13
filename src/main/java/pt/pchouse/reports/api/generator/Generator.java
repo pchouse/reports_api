@@ -206,7 +206,7 @@ public class Generator implements IGenerator {
             printProperties.setSelectedPrinter(printerConfig.getName());
 
             // print
-            report.getExporter().exportReport();
+            report.exportReport();
 
             int afterPrint = reportRequest.getAfterPrintOperations();
 
@@ -248,7 +248,7 @@ public class Generator implements IGenerator {
             } while (parent != null && !exporterOutputOptional.isPresent());
         }
 
-        exporter.exportReport();
+        report.exportReport();
 
         if (reportRequest.getReportType().equals(ReportRequest.ReportType.PDF) && reportRequest.getSign() != null) {
 

@@ -280,7 +280,7 @@ class ReportControllerTest {
         );
 
         assertThat(reportResponse.getStatus()).isEqualTo(ReportResponse.Status.OK);
-        assertThat(reportResponse.getMessage()).isEqualTo("1.0.0");
+        assertThat(reportResponse.getMessage()).isEqualTo("1.0.2");
     }
 
     @Test
